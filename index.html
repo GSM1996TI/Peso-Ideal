@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cálculo de Peso Ideal</title>
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="./Assets/css/estilos.css">
+</head>
+
+<body>
+  <!-- Container principal do formulário -->
+  <div class="container">
+    <!-- Imagem da balança com fallback, caso a original não carregue -->
+    <img src="./Assets/img/ex3_2.jpg" alt="Balança de Peso"
+      onerror="this.onerror=null;this.src='https://placehold.co/200x200/d1d5db/374151?text=Balança';">
+    
+    <h1>Cálculo de Peso Ideal</h1>
+    
+    <p>
+      Nome:
+      <input type="text" id="inNome" placeholder="Digite seu nome">
+    </p>
+    
+    <p>
+      Categoria:
+      <!-- Nomes dos radio buttons são 'categoria' para agrupamento -->
+      <input type="radio" name="categoria" id="rbMasculino"> Masculino
+      <input type="radio" name="categoria" id="rbFeminino"> Feminino
+      <input type="radio" name="categoria" id="rbAdolescente"> Adolescente
+    </p>
+    
+    <p>
+      Altura (em metros):
+      <input type="text" id="inAltura" placeholder="Ex: 1.75">
+    </p>
+    
+    <p>
+      <button id="btCalcular">Calcular Peso Ideal</button>
+      <button id="btLimpar">Limpar Campos</button>
+    </p>
+    
+    <!-- Área para exibir o resultado do cálculo -->
+    <h3 id="outResposta"></h3>
+    
+    <!-- Área para exibir mensagens de status ou erro -->
+    <div id="statusMessage"></div>
+  </div>
+
+  <!-- Link para o arquivo JavaScript externo -->
+  <script src="./Assets/js/ex3_2.js"></script>
+</body>
+
+</html>
